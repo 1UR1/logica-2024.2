@@ -1,0 +1,18 @@
+<script>
+//8) Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se ela poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).
+
+//entrada
+let nascimento1 = parseFloat(prompt("Diga o nascimento"))
+let nascimento2 = parseFloat(prompt("Diga outro nascimento"))
+//processamento
+let resposta = ""
+if (nascimento1 >= 16) {
+    resposta = " Podera votar este ano"
+}else {
+    resposta = " Não podera votar esse ano"
+}
+//saida
+document.write("Você" + resposta)
+
+
+</script>
