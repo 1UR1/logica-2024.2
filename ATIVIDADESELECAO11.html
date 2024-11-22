@@ -1,39 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <input type="number" name="senha" id="senha">
-    <input type="button" value="enviar" onclick="enviar()">
-    <script>
-
-        /*
-        Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha 
-        válida é o número 1234. Devem ser impressas as seguintes mensagens: 
-        ACESSO PERMITIDO caso a senha seja válida. 
-        ACESSO NEGADO caso a senha seja inválida.
-        */
+ //Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é o número 1234. Devem ser impressas as seguintes mensagens: 
+        //ACESSO PERMITIDO caso a senha seja válida. 
+       //ACESSO NEGADO caso a senha seja inválida.
+    
 
         //entrada
-        let senha = document.querySelector("input#senha")
+        let senha = prompt("senha")
 
-        function enviar() {
-            let sen = Number(senha.value)
-
-            //processamento e envio
-            if(sen === 1234){
-                document.write("ACESSO PERMITIDO")
+        //processamento
+        function validarSenha(password) {
+            let resposta = ""
+            if (password == "1234") {
+                resposta = "ACESSO PERMITIDO"
+            } else {
+                resposta = "ACESSO NEGADO"
             }
-            else{
-                document.write("ACESSO NEGADO")
-            }
-
+            return resposta
         }
+        //saida
+        document.write(validarSenha(senha))
+           
         
 
     </script>
-</body>
-</html>
+
