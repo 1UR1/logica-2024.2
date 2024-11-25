@@ -1,0 +1,22 @@
+<script>
+
+// Entrada de dados
+let quantidade = parseInt(prompt("Digite a quantidade de maçãs que deseja comprar:"));
+let precoUnitario = parseFloat(prompt("Digite o preço unitário da maçã:"));
+
+// Cálculo do valor total
+let valorTotal;
+
+if (quantidade >= 12) {
+    // Desconto para compras de 12 ou mais maçãs
+    valorTotal = quantidade * precoUnitario * 0.90;  // 10% de desconto
+} else {
+    valorTotal = quantidade * precoUnitario;
+}
+
+// Exibição do valor total
+console.log("O valor total a ser pago é R$ " + valorTotal.toFixed(2));
+
+
+
+</script>
