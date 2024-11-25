@@ -1,0 +1,21 @@
+<script>
+
+// Entrada do ano de nascimento
+let anoNascimento = parseInt(prompt("Digite seu ano de nascimento:"));
+
+// Obter o ano atual
+let anoAtual = new Date().getFullYear();
+
+// Calcular a idade
+let idade = anoAtual - anoNascimento;
+
+// Verificação da idade para votar
+if (idade >= 16) {
+    console.log("Você pode votar! Sua idade é " + idade + " anos.");
+} else {
+    console.log("Você não pode votar. Sua idade é " + idade + " anos.");
+}
+
+
+
+</script>
