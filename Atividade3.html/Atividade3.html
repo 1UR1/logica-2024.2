@@ -1,0 +1,50 @@
+<script>
+//Enunciado: Sistema de Conta Bancária
+
+//Você deve implementar um sistema de gerenciamento de contas bancárias. O sistema deve permitir a criação de contas, depósitos, retiradas e a consulta do saldo. Além disso, o sistema deve gerenciar contas de diferentes tipos, como contas correntes e contas poupança. Requisitos:
+
+//Sistema Conta:
+//    	A Conta deve ter os seguintes atributos:
+//        	titular (String): nome do titular da conta.
+//        	saldo (Float): o saldo atual da conta (inicialmente 0).
+//        	tipo (String): tipo da conta (por exemplo, "corrente" ou "poupança").
+
+//Métodos(funções):
+//  	depositar(valor: float): Adiciona um valor ao saldo da conta.
+//	retirar(valor: float): Subtrai um valor do saldo da conta, desde que haja saldo suficiente. Caso contrário, exibe uma mensagem de erro.
+//	consultar_saldo(): Retorna o saldo atual da conta.
+//	exibir_dados(): Exibe os dados da conta, incluindo o titular, saldo e tipo.
+
+//Funcionalidades adicionais:
+//  	Permitir que o usuário crie contas e realize operações (depósito, retirada) através de um menu interativo.
+//	Validar o valor dos depósitos e retiradas, assegurando que não sejam negativos.
+    	
+
+function consultar_saldo() {
+}
+
+function exibir_dados() {
+}
+
+    function menu() {} 
+    let opcao = -1
+    while (opcao !=0) {
+        opcao = prompt(`
+        Titular: ${titular} | ${saldo}
+        [1] - Deposito
+        [2] - Saque
+        [3] - Saldo
+        [4] - Exibir Dados
+        [0] - Sair
+        `)
+        if (opcao == 1) {
+            let valor = parseFloat(prompt("Valor do Deposito?"))
+            saldo = depoositar(valor)
+            alert(`Saldo: ${saldo}`)
+        }
+        
+}
+
+
+
+</script>
